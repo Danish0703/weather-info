@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #333;
+    --text-color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    background-color: var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(86, 69, 69, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #56778e;
+    color: var(--text-color);
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: var(--secondary-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    header,
+    footer {
+        padding: 5px;
+    }
+
+    .container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    input {
+        width: 100%;
+    }
+}
